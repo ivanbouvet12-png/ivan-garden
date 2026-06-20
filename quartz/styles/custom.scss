@@ -15,5 +15,18 @@ body::before {
 }
 
 :root[saved-theme="dark"] body::before {
-  filter: brightness(0.4);
+  opacity: 0.3;
+}
+
+/* Search bar colors */
+.search-button {
+  background-color: var(--dark) !important;
+  color: var(--light) !important;
+  opacity: 0.5;
+}
+
+:root[saved-theme="dark"] .search-button {
+  background-color: var(--light) !important;
+  color: var(--dark) !important;
+  opacity: 0.5;
 }
